@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-Month Anniversary Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        header {
+            background-color: #ffc0cb;
+            padding: 20px;
+            color: #fff;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        .envelope-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjNvanNwNThzaGZiMGI3N3ZtNjFqdmV5bWJtZjd1eWI0bWJ1dGcxeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26ufcYAkp8e66vanu/giphy.gif');
+            background-size: cover;
+            background-position: center;
+        }
+        .envelope {
+            background-color: #ffc0cb;
+            padding: 40px;
+            border-radius: 20px;
+            cursor: pointer;
+            position: relative;
+        }
+        .envelope img {
+            width: 400px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .letter {
+            display: none;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .message {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gif-container {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        .gif-container img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy 4-Months Anniversary!</h1>
+    </header>
+    <div class="envelope-container">
+        <div class="envelope" onclick="openLetter()">
+            <img src="https://i.imgur.com/awnkp9P.jpeg" alt="Your Image">
+            <p>Click to Open</p>
+        </div>
+    </div>
+    <div class="letter" id="letter">
+        <div class="container">
+            <div class="message">
+                <p>Hi bebe,</p>
+                <p>Today marks 4 months since you are the BEST bf ever.I still remember that night, we were, well, praying together xD and you said you want me to be yours...Very romantic if u ask me hehe.<3333</p>
+            </div>
+            <!-- Add more message divs with the remaining phrases -->
+            <div class="message">
+                <p>From the day we met, I knew there was something special about you. Your kindness, your laughter– they drew me in, and I couldn’t help but fall for you </p>
+            </div>
+            <div class="message">
+                <p>Each day on the phone with you makes me love you more and more. Whether we're just sitting in silence, doing our own thing and occasionally saying I love you, or talking about our day, I value every second we spend together </p>
+            </div>
+            <div class="message">
+                <p>You've become my rock, my best friend. With you,I know I'll be safe no matter what life throws at us </p>
+            </div>
+            <div class="message">
+                <p>Your love has touched me in ways I never imagined. You've shown me what true love is all about, and for that,my heart is yours </p>
+            </div>
+            <div class="message">
+                <p>On this special day,even though we are not together I want you to know how much you mean to me. You're not just my boyfriend – you're my everything.</p>
+            </div>
+            <div class="message">
+                <p>Here's to us, iubirea mea, and to many more months of laughter, love, and adventures together.  Happy 4-months anniversary. I love you more than words can say( and I love you more hehe)<3 .</p>
+            </div>
+            <div class="gif-container">
+                <img src="https://media0.giphy.com/media/KmxmoHUGPDjfQXqGgv/giphy.gif" alt="Cat Hugs GIF">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openLetter() {
+            var letter = document.getElementById('letter');
+            var gifContainer = document.querySelector('.gif-container');
+
+            gifContainer.style.display = 'none'; // Hide the GIF initially
+
+            setTimeout(function() {
+                gifContainer.style.display = 'block'; // Display the GIF after opening the envelope
+                letter.style.display = 'block';
+            }, 2000); // Delay the display of letter to allow time for the GIF to show
+        }
+    </script>
+</body>
+</html>
